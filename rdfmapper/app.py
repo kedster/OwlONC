@@ -13,3 +13,25 @@ strategy_map = {
     'xml': XMLStrategy(),
     'sql': SQLStrategy()
 }
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    rdf_output = ""
+    if request.method == 'POST':
+        file = request.files['datafile']
+        datatype = request.form['datatype']
+        
+        filepath = os.path.join("temp_input." + datatype)
+        file.save(filepath)
+
+        strategy = strategy_map.get(datatype)
+        if strategy:
+            data = strategy.load_data(filepath)
+            rdf_output = generate_rdf(data)
+
+        os.remove(filepath)
+
+    return render_template("index.html", rdf_output=rdf_output)
+
+if __name__ == '__main__':
+    app.run(debug=True)
