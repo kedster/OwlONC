@@ -1,0 +1,22 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RDF Mapper</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>RDF Mapper</h1>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="datafile" required>
+    <select name="datatype">
+      <option value="json">JSON</option>
+      <option value="xml">XML</option>
+      <option value="sql">SQLite</option>
+    </select>
+    <button type="submit">Generate RDF</button>
+  </form>
+  <pre>{{ rdf_output }}</pre>
+</body>
+</html>
