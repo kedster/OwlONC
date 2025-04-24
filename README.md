@@ -52,3 +52,20 @@ MIT License
 
 ## Contributing
 Pull requests welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## Examples
+This repository includes example input files in the samples/ directory:
+
+
+Format	File	Description
+JSON	sample.json	Array of patient objects
+XML	sample.xml	Same patient data in XML format
+SQLite	sample.db	patients table with 2 rows
+OWL/RDF	sample.owl	Minimal ontology describing patients
+To test the system:
+
+Launch the app (python app.py)
+
+Upload one of the sample files via the web interface
+
+View the converted RDF output
