@@ -1,4 +1,4 @@
-```python
+
 from abc import ABC, abstractmethod
 
 class DataInputStrategy(ABC):

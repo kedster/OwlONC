@@ -1,4 +1,4 @@
-```python
+
 import xml.etree.ElementTree as ET
 from strategies.base import DataInputStrategy
 

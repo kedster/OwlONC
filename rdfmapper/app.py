@@ -1,4 +1,4 @@
-```python
+
 from flask import Flask, render_template, request
 from strategies.json_strategy import JSONStrategy
 from strategies.xml_strategy import XMLStrategy

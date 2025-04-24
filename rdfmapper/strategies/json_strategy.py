@@ -1,4 +1,4 @@
-```python
+
 import json
 from strategies.base import DataInputStrategy
 

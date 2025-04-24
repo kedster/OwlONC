@@ -1,4 +1,4 @@
-```python
+
 import sqlite3
 from strategies.base import DataInputStrategy
 

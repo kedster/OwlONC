@@ -1,4 +1,4 @@
-```python
+
 from rdflib import Graph, URIRef, Literal, Namespace
 
 def generate_rdf(data, namespace_uri="http://example.org/"):
