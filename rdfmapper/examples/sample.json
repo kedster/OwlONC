@@ -1,0 +1,15 @@
+{
+    "patients": [
+      {
+        "id": "123",
+        "name": "Jane Doe",
+        "diagnosis": "Hypertension"
+      },
+      {
+        "id": "124",
+        "name": "John Smith",
+        "diagnosis": "Diabetes"
+      }
+    ]
+  }
+  

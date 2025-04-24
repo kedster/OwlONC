@@ -1,0 +1,12 @@
+<patients>
+  <patient>
+    <id>123</id>
+    <name>Jane Doe</name>
+    <diagnosis>Hypertension</diagnosis>
+  </patient>
+  <patient>
+    <id>124</id>
+    <name>John Smith</name>
+    <diagnosis>Diabetes</diagnosis>
+  </patient>
+</patients>
